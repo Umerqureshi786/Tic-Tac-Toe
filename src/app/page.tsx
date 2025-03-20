@@ -13,7 +13,7 @@ export default function TicTacToe() {
   ];
 
   const checkWinner = (squares) => {
-    for (let combo of winningCombinations) {
+    for (const combo of winningCombinations) {
       const [a, b, c] = combo;
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
         return squares[a];
